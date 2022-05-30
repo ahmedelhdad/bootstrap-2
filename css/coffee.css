@@ -1,0 +1,198 @@
+/* -------- Ruls Global ----------  */
+:root
+{
+    --transition: 0.5s;
+    --color-green:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+.main-btn 
+{
+    background-color: var(--color-green);
+    color: white;
+}
+.color-title
+{
+    color: var(--color-green);
+}
+::-webkit-scrollbar
+{
+    background-color: var(--bg);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: white;
+    border-radius: 50px;
+}
+/* -------- Ruls Global ----------  */
+
+/* -------- Start Navbar ----------  */
+.navbar
+{
+    background-color: var(--bg);
+    position: relative;
+    border-bottom: 2px solid #777;
+    position: sticky;
+}
+.navbar::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,.3);
+}
+.navbar .navbar-nav .nav-item .nav-link
+{
+    color: white;
+    position: relative;
+    transition: var(--transition);
+}
+.navbar .navbar-nav .nav-item:hover .nav-link
+{
+    color: var(--color-green);
+}
+
+/* -------- End Navbar ----------  */
+/* -------- Start Landing ----------  */
+.landing
+{
+    background-image: url(../img/home-img.jpeg);
+    background-size: cover;
+    height: calc(100vh - 106px);
+}
+.landing .info h1 
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    max-width: 500px;
+}
+.landing .info p 
+{
+    max-width: 600px;
+}
+/* -------- End Landing ----------  */
+/* -------- Start About ----------  */
+.about 
+{
+    background-color: var(--bg);
+}
+.about .row .color 
+{
+    background-color: #13131a;
+}
+/* -------- End About ----------  */
+/* -------- Start MENU ----------  */
+.menu
+{
+    background-color: var(--bg);
+    
+}
+/* -------- End MENU ----------  */
+
+/* -------- Start products ----------  */
+.products
+{
+    background-color: var(--bg);
+}
+.toggle
+{
+    width: 60px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle span
+{
+    background-color: #777;
+    width: 60px;
+    height: 2px;
+    margin-right: 2px;
+    transform: rotate(90deg);
+}
+/* -------- End products ----------  */
+/* -------- Start review ----------  */
+.review
+{
+    background-color: var(--bg);
+}
+/* -------- End products ----------  */
+
+/* -------- Start CONTACT  ----------  */
+.contact
+{
+    background-color: var(--bg);
+}
+.contact .row .info
+{
+    background-color: var(--black);
+    
+}
+.contact .row .info form .input svg 
+{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact .row .info form input
+{
+    background-color: var(--bg);
+    border: var(--border);
+    color: white;
+    font-size: 18px;
+}
+.contact .row .info form input:focus
+{
+    outline: none;
+}
+.contact .row .info form input::placeholder
+{
+    /* font-size: 20px; */
+    color: var(--color-green);
+    
+}
+/* -------- End CONTACT  ----------  */
+/* -------- Start BLOGS  ----------  */
+.blogs
+{
+    background-color: var(--bg);
+}
+.blogs .row .card 
+{
+    border:none;
+    border: 1px solid #777;
+    
+}
+.blogs .row .card img
+{
+    transition: var(--transition);
+    
+}
+.blogs .row .card img:hover
+{
+    transform: scale(1.3);
+}
+.blogs .row .card .card-body
+{
+    background-color: var(--bg);
+    z-index: 1;
+}
+.blogs .row .card .card-body span
+{
+    color: var(--color-green);
+}
+/* -------- End BLOGS  ----------  */
+/* -------- Start footer  ----------  */
+.footer
+{
+    background-color: var(--black);
+}
+/* -------- End Footer  ----------  */
